@@ -1,0 +1,22 @@
+#wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;;    
+}
+
+body {
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.symbol {
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+
+img {
+    vertical-align: top;
+}

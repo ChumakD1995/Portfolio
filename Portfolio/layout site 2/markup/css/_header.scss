@@ -1,0 +1,257 @@
+#header {
+    background: #FFFFFF;
+    position: relative;
+}
+
+.header-top {
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-right {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+
+    .contacts {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .lang-uk {
+        padding-right: 5px;
+    }
+
+    .lang-ru,
+    .lang-en {
+    margin-right: 6px;
+    }
+    
+    .lang-uk,
+    .lang-ru,
+    .lang-en {
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #B3B3BA;
+    }
+
+    .tell,
+    .adress {
+        color: #B3B3BA;
+        text-decoration: none;
+    }
+}
+
+.img-point {
+    padding: 6px 5px;
+}
+
+.menu {
+    a {
+        color: #24A3FF;
+        font-weight: bold;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    li {
+        display: inline-block;
+        padding: 0 5px 0;
+    }
+    
+    .color-button a {
+        text-decoration: underline;
+        color: #F0145A;
+    }
+}
+
+// #opener {
+//     display: none;
+// }
+
+// .opener {
+//     opacity: 1;
+//     margin: 0 0 0 auto;
+//     position: relative;
+//     display: block;
+//     width: 40px;
+//     height: 40px;
+//     border: 2px solid #000;
+//     border-radius: 4px;
+
+//     span,
+//     &:before,
+//     &:after{
+//         position: absolute;
+//         display: block;
+//         content: '';
+//         height: 4px;
+//         width: 90%;
+//         border-radius: 2px;
+//         background: #000;
+//         left: 50%;
+//         top: 50%;
+//         transform: translateX(-50%);
+//         transition: all .5s;
+//     }
+
+//     &:before {
+//         top: 16%;
+//     }
+
+//     &:after {
+//         top: 80%;
+//     } 
+// }
+
+// #opener {
+//     opacity: 0;
+//     position: absolute;
+
+//     &:checked {
+//         + .opener {
+
+//             span,
+//             &:before,
+//             &:after {
+//                 background: red;
+//             }
+
+//             span {
+//                 opacity: 0;
+//             }
+
+//             &:before {
+//                 top: 50%;
+//                 transform: translateX(-50%) rotate(-45deg);
+//             }
+
+//             &:after {
+//                 top: 50%;
+//                 transform: translateX(-50%) rotate(45deg);    
+//             }
+//         }
+
+//         + .header-menu {
+//             opacity: 1;
+//             visibility: visible;
+//         }
+//     }
+// }
+
+// @media (max-width: 768px) {
+//     .header-menu {
+//         text-align: center;
+//         position: absolute;
+//         opacity: 1;
+//         top: 100%;
+//         left: 0;
+//         right: 0;
+//         transition: opacity 0.8s;
+//         visibility: hidden;
+//     }
+
+//     .header-left img {
+        
+//     }
+
+//     .header-right {
+//         position: fixed;
+//         // background: #F5F5FA;
+        
+//     }
+
+//     .lang-uk,
+//     .lang-ru,
+//     .lang-en,
+//     .tell {
+//         position: relative;
+//         top: 100%;
+//         opacity: 1;
+//         font-weight: bold;
+//     }
+
+//     .contacts img {
+//         opacity: 1;
+//     }
+
+//     .adress {
+//         opacity: 0;
+//     }
+
+//     .footer-top-buttons,
+//     .footer-but-link {
+//         background: #F5F5FA;
+//     }
+// }
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .header-top {
+        padding-top: 50px;
+        flex-wrap: wrap;
+        padding-inline: 60px;
+    }
+
+    .header-menu {
+        padding: 0;
+    }
+
+    .menu {
+        padding-top: 25px;
+    }
+
+    .header-left {
+        padding-right: 45px;
+    }
+
+    .header-right {
+        position: unset;
+        flex-direction: unset;
+
+        .contacts {
+            position: absolute;
+            top: 0;
+            padding-right: 45px;
+        }
+
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .contacts {
+
+
+        .lang-en {
+            visibility: visible;
+        }
+
+        .adress {
+            display: none;
+        }
+
+        img {
+            display: none;
+        }
+    }
+
+    .header-left img {
+        width: 212px;
+        height: 57px;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+
+
+
+
