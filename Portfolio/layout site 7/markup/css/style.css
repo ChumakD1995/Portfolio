@@ -154,6 +154,11 @@ nav {
     background: transparent;
 }
 
+.itemList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .itemList ul{
     margin: 0;
     padding: 0;
@@ -377,7 +382,12 @@ nav {
     display: inline-block;
 }
 
-
+@media (max-width: 1200px) {
+    .item {
+        width: 50%;
+        text-align: center;
+    }
+}
 
 
 
